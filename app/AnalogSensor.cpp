@@ -2,21 +2,17 @@
 #include <numeric>
 #include <vector>
 
-AnalogSensor::AnalogSensor(unsigned int samples)
-    : mSamples(samples)
-{
+AnalogSensor::AnalogSensor(unsigned int samples) : mSamples(samples) {}
+
+AnalogSensor::~AnalogSensor() {}
+
+int AnalogSensor::Read() {
+  std::vector<int> *readings = new std::vector<int>(mSamples, 10);
+
+  double result = std::accumulate(readings->begin(), readings->end(), 0.0) /
+                  readings->size();
+
+  delete readings; // Fix for memory leak
+
+  return result;
 }
-
-AnalogSensor::~AnalogSensor()
-{
-}
-
-int AnalogSensor::Read()
-{
-    std::vector<int> *readings = new std::vector<int>(mSamples, 10);
-
-    double result = std::accumulate( readings->begin(), readings->end(), 0.0 ) / readings->size();
-    return result;
-}
-
-

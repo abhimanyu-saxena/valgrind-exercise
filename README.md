@@ -20,3 +20,18 @@
   rm -rf build/
 ```
 
+## Valgrind Results 
+The results are present in the folder 'result' in the root directory of the project. 
+
+Result of valgrind run without static-link is in 'result/valgrind_static.txt'
+Result of bugs found by valgrind is in 'result/valgrind_bug.txt'
+Result of valgrind after bug fixes is in 'result/valgrind_fix.txt'
+
+
+## Extra Credit Responses
+
+What happens when the executable is linked statically?  Does Valgrind still detect those same bugs?
+- Yes, valgrind still detects the same bugs. But the bugs are detected recursively in the libraries. 
+
+Why or why not?
+- It's possible that the static linking process is affecting the memory layout of the program, which could result recursive detection of the same bugs.

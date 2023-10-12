@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/bmv/abhi/valgrind-exercise/build/app",
+  "command": "/usr/bin/c++  -I/home/bmv/abhi/valgrind-exercise/include -std=gnu++14 -o CMakeFiles/shell-app.dir/AnalogSensor.cpp.o -c /home/bmv/abhi/valgrind-exercise/app/AnalogSensor.cpp",
+  "file": "/home/bmv/abhi/valgrind-exercise/app/AnalogSensor.cpp"
+},
+{
+  "directory": "/home/bmv/abhi/valgrind-exercise/build/app",
+  "command": "/usr/bin/c++  -I/home/bmv/abhi/valgrind-exercise/include -std=gnu++14 -o CMakeFiles/shell-app.dir/main.cpp.o -c /home/bmv/abhi/valgrind-exercise/app/main.cpp",
+  "file": "/home/bmv/abhi/valgrind-exercise/app/main.cpp"
+}
+]
